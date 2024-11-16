@@ -17,11 +17,25 @@ const createRestoDetailTemplate = (resto) => `
             <img src="${resto.pictureId ? CONFIG.BASE_IMAGE_URL + resto.pictureId : `https://restaurant-api.dicoding.dev/images/small/${resto.pictureId}`}" alt="${resto.name}">
             <div class="container">
                 <h4><b>${resto.name}</b></h4>
-                <p><strong>Deskripsi:</strong> ${resto.description}</p>
+                <p>${resto.description}</p>
                 <p><strong>Kota:</strong> ${resto.city}</p>
                 <p><strong>Alamat:</strong> ${resto.address}</p>
                 <p><strong>Rating:</strong> ${resto.rating}</p>
-                <button>Detail</button>
+                <p><strong>Menu Makanan:</strong></p>
+					<ul>
+						${resto.menus.foods.map((food) => `<li><p>${food.name}</p></li>`).join('')}
+					</ul>
+					<p><strong>Menu Minuman:</strong></p>
+					<ul>
+						${resto.menus.drinks.map((drink) => `<li><p>${drink.name}</p></li>`).join('')}
+					</ul>
+					<p><strong>Ulasan Pelanggan:</strong></p>
+					${resto.customerReviews.map((review) => `
+						<div>
+							<p><strong>${review.name}</strong></p>
+							<p>${review.review}</p>
+						</div>
+					`).join('')}
             </div>
         </div>
 `;

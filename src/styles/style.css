@@ -164,7 +164,7 @@ h2 {
 }
 
 .card img {
-  height: 150px;
+  height: 250px;
   object-fit: cover;
   width: 100%;
 }
@@ -185,6 +185,12 @@ h2 {
   background-color: #d2e3c8;
   color: #4f6f52;
   transition: all 0.4s ease-in-out;
+}
+
+.wrapper-detail{
+  display: flex;
+  width: 50%;
+  margin: auto;
 }
 
 .wrapper-favorite {
@@ -219,6 +225,7 @@ footer .footer {
   color: #4f6f52;
   font-size: medium;
   font-weight: 500;
+  margin-top: 3rem;
 }
 
 @media screen and (max-width: 768px) {

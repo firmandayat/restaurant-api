@@ -6,7 +6,7 @@ const Detail = {
   async render() {
     return `
           <h2 style="margin-top:100px">Detail Page</h2>
-          <section id="Favorite" class="wrapper-favorite">
+          <section id="Favorite" class="wrapper-detail">
         `;
   },
 
