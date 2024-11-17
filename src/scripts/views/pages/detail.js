@@ -76,16 +76,27 @@ const Detail = {
         }
       } catch (error) {
         console.error('Error posting review:', error);
-        alert(
-          'Gagal review. Periksa koneksi internet Anda'
-        );
+        alert('Gagal review. Periksa koneksi internet Anda');
       }
 
       this._initReviewForm(restaurantId);
     });
   },
 
-
+  _updateReviews(customerReviews) {
+    const reviewsContainer = document.querySelector('#restaurant');
+    reviewsContainer.innerHTML = customerReviews
+      .map(
+        (review) => `
+      <li>
+        <p class="review-name">${review.name}</p>
+        <p class="review-date">${review.date}</p>
+        <p class="review-text">${review.review}</p>
+      </li>
+    `
+      )
+      .join('');
+  },
 };
 
 export default Detail;
