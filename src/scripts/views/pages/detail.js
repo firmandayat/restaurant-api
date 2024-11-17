@@ -13,9 +13,9 @@ const Detail = {
           <h2>Add Your Review</h2>
           <div style="display:flex; justify-content:center"> 
             <form id="reviewForm">
-            <label for="name">Nama</label><br>
+            <label for="reviewName">Nama</label><br>
               <input type="text" id="reviewName" placeholder="Your Name" required><br><br>
-            <label for="review">Review</label><br>
+            <label for="reviewText">Review</label><br>
               <textarea id="reviewText" placeholder="Your Review" required></textarea><br><br>
               <button type="submit">Submit Review</button><br>
             </form>
