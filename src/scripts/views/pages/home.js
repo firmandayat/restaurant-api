@@ -38,8 +38,8 @@ const Home = {
             </section>
           <h2 style="margin-top:50px">Restaurants</h2>
           <div id="restaurant" class="wrapper-resto"></div>
-          <section id="About Us" class="about-us">
-            <h2 tabindex="0">About Us</h2>
+          <section id="Contact Us" class="contact-us">
+            <h2 tabindex="0">Contact Us</h2>
             <p tabindex="0" class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi sapiente
                 quod amet cumque,
                 voluptatibus
