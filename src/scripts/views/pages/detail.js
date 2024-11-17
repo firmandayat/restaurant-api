@@ -1,3 +1,4 @@
+import CONFIG from '../../globals/config';
 import UrlParser from '../../routes/url-parser';
 import RestoSource from '../../data/resto-source';
 import { createRestoDetailTemplate } from '../templates/template-creator';
@@ -9,6 +10,14 @@ const Detail = {
           <h2 style="margin-top:100px">Detail Page</h2>
           <div id="restaurant" class="wrapper-detail"></div>
           <div id="likeButtonContainer"></div>
+          <h2>Add Your Review</h2>
+          <div style="display:flex; justify-content:center; height:80px"> 
+            <form id="reviewForm">
+              <input type="text" id="reviewName" placeholder="Your Name" required>
+              <textarea id="reviewText" placeholder="Your Review" required></textarea>
+              <button type="submit">Submit Review</button>
+            </form>
+          </div>
         `;
   },
 
@@ -30,8 +39,53 @@ const Detail = {
         rating: restos.rating,
       },
     });
-
   },
+
+  _initReviewForm(restaurantId) {
+    const reviewForm = document.getElementById('reviewForm');
+    reviewForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const nameInput = document.getElementById('reviewName');
+      const reviewInput = document.getElementById('reviewText');
+      const name = nameInput.value;
+      const review = reviewInput.value;
+
+      try {
+        const response = await fetch(`${CONFIG.BASE_URL}/review`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            id: restaurantId,
+            name,
+            review,
+          }),
+        });
+
+        const responseJson = await response.json();
+
+        if (responseJson.error === false) {
+          alert('Thanks! Review berhasil');
+          this._updateReviews(responseJson.customerReviews);
+          nameInput.value = '';
+          reviewInput.value = '';
+        } else {
+          alert('Gagal review');
+        }
+      } catch (error) {
+        console.error('Error posting review:', error);
+        alert(
+          'Gagal review. Periksa koneksi internet Anda'
+        );
+      }
+
+      this._initReviewForm(restaurantId);
+    });
+  },
+
+
 };
 
 export default Detail;
