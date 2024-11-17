@@ -32,8 +32,8 @@ const Home = {
                 </div>
             </section>
           <h2 style="margin-top:50px">Restaurants</h2>
-          <section id="Favorite" class="wrapper-favorite">
-          
+          <div id="restaurant" class="wrapper-resto"></div>
+        </div>          
         `;
   },
 
@@ -41,7 +41,7 @@ const Home = {
     console.log('Home page rendered');
     const restos = await RestoSource.homeRestaurant();
     console.log(restos);
-    const restosContainer = document.querySelector('#Favorite');
+    const restosContainer = document.querySelector('#restaurant');
     restos.forEach((resto) => {
       restosContainer.innerHTML += createRestoItemTemplate(resto);
     });

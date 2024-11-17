@@ -1,12 +1,13 @@
 import UrlParser from '../../routes/url-parser';
 import RestoSource from '../../data/resto-source';
-import { createRestoDetailTemplate, createLikeButtonTemplate } from '../templates/template-creator';
+import { createRestoDetailTemplate } from '../templates/template-creator';
+import LikeButtonInitiator from '../../utils/like-button-initiator';
 
 const Detail = {
   async render() {
     return `
           <h2 style="margin-top:100px">Detail Page</h2>
-          <section id="Favorite" class="wrapper-detail">
+          <div id="restaurant" class="wrapper-detail"></div>
           <div id="likeButtonContainer"></div>
         `;
   },
@@ -16,10 +17,19 @@ const Detail = {
     const url = UrlParser.parseActiveUrlWithoutCombiner();
     const restos = await RestoSource.detailRestaurant(url.id);
     console.log(restos);
-    const restoContainer = document.querySelector('#Favorite');
-    const likeButtonContainer = document.querySelector('#likeButtonContainer');
+    const restoContainer = document.querySelector('#restaurant');
     restoContainer.innerHTML = createRestoDetailTemplate(restos);
-    likeButtonContainer.innerHTML = createLikeButtonTemplate();
+
+    LikeButtonInitiator.init({
+      likeButtonContainer: document.querySelector('#likeButtonContainer'),
+      restos: {
+        id: restos.id,
+        pictureId: restos.pictureId,
+        name: restos.name,
+        city: restos.city,
+        rating: restos.rating,
+      },
+    });
 
   },
 };

@@ -193,11 +193,22 @@ h2 {
   margin: auto;
 }
 
-.wrapper-favorite {
+.wrapper-resto {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-columns: 100px;
   gap: 30px;
+}
+.wrapper-favorite {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.flex{
+  display: flex;
 }
 
 img {
