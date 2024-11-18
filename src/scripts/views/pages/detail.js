@@ -41,6 +41,7 @@ const Detail = {
         rating: restos.rating,
       },
     });
+    this._initReviewForm(restos.id);
   },
 
   _initReviewForm(restaurantId) {
@@ -78,10 +79,7 @@ const Detail = {
         }
       } catch (error) {
         console.error('Error posting review:', error);
-        alert('Gagal review. Periksa koneksi internet Anda');
       }
-
-      this._initReviewForm(restaurantId);
     });
   },
 
@@ -89,12 +87,32 @@ const Detail = {
     const reviewsContainer = document.querySelector('#restaurant');
     reviewsContainer.innerHTML = customerReviews
       .map(
-        (review) => `
-      <li>
-        <p class="review-name">${review.name}</p>
-        <p class="review-date">${review.date}</p>
-        <p class="review-text">${review.review}</p>
-      </li>
+        (resto) => `
+      <div class="card">
+            <img src="${resto.pictureId ? CONFIG.BASE_IMAGE_URL + resto.pictureId : `https://restaurant-api.dicoding.dev/images/small/${resto.pictureId}`}" alt="${resto.name}">
+            <div class="container">
+                <h4><b>${resto.name}</b></h4>
+                <p>${resto.description}</p>
+                <p><strong>Kota:</strong> ${resto.city}</p>
+                <p><strong>Alamat:</strong> ${resto.address}</p>
+                <p><strong>Rating:</strong> ${resto.rating}</p>
+                <p><strong>Menu Makanan:</strong></p>
+					<ul>
+						${resto.menus.foods.map((food) => `<li><p>${food.name}</p></li>`).join('')}
+					</ul>
+					<p><strong>Menu Minuman:</strong></p>
+					<ul>
+						${resto.menus.drinks.map((drink) => `<li><p>${drink.name}</p></li>`).join('')}
+					</ul>
+					<p><strong>Ulasan Pelanggan:</strong></p>
+					${resto.customerReviews.map((review) => `
+						<div>
+							<p><strong>${review.name}</strong></p>
+							<p>${review.review}</p>
+						</div>
+					`).join('')}
+            </div>
+        </div>
     `
       )
       .join('');
