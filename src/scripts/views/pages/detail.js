@@ -105,10 +105,10 @@ const Detail = {
 						${resto.menus.drinks.map((drink) => `<li><p>${drink.name}</p></li>`).join('')}
 					</ul>
 					<p><strong>Ulasan Pelanggan:</strong></p>
-					${resto.customerReviews.map((review) => `
+					${resto.customerReviews.map((resto) => `
 						<div>
-							<p><strong>${review.name}</strong></p>
-							<p>${review.review}</p>
+							<p><strong>${resto.name}</strong></p>
+							<p>${resto.review}</p>
 						</div>
 					`).join('')}
             </div>
