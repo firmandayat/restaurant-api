@@ -72,7 +72,7 @@ const Detail = {
 
         if (responseJson.error === false) {
           alert('Thanks! Review berhasil');
-          this._updateReviews(responseJson.customerReviews);
+          window.location.reload();
           nameInput.value = '';
           reviewInput.value = '';
         } else {
