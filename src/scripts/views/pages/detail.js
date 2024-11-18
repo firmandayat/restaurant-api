@@ -8,9 +8,10 @@ const Detail = {
   async render() {
     return `
           <h2 style="margin-top:100px">Detail Page</h2>
+          <p class="container text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi tempore atque reprehenderit, ratione, illo neque est perspiciatis itaque temporibus ipsam dignissimos adipisci. Eius alias eligendi laborum facilis ipsam repellat, ipsa quasi voluptatum, esse iure ut recusandae obcaecati nemo quibusdam quod libero</p>
           <div id="restaurant" class="wrapper-detail"></div>
           <div id="likeButtonContainer"></div>
-          <h2>Add Your Review</h2>
+          <h2 style="margin-top:50px">Add Your Review</h2>
           <div class="card-review"> 
             <form id="reviewForm">
             <label class="label" for="reviewName">Nama</label><br>

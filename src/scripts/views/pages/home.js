@@ -51,10 +51,6 @@ const Home = {
                 ducimus? 
             </p>
             <div class="sosmed">
-                <a href="https://www.instagram.com/firmandyt/" target="_blank"><img src="./images/logos/ig.png"
-                        width="45px" alt="Instagram Logo"></a>
-                <a href="https://www.linkedin.com/in/firmandyt/" target="_blank"><img
-                        src="./images/logos/linkedin.png" width="45px" alt="Linkedin Logo"></a>
                 <a href="https://mailto:firman.txt@gmail.com" target="_blank"><img src="./images/logos/gm.png"
                         width="45px" alt="Gmail Logo"></a>
             </div>
