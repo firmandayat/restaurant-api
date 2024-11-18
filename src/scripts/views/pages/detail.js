@@ -11,13 +11,13 @@ const Detail = {
           <div id="restaurant" class="wrapper-detail"></div>
           <div id="likeButtonContainer"></div>
           <h2>Add Your Review</h2>
-          <div style="display:flex; justify-content:center"> 
+          <div class="card-review"> 
             <form id="reviewForm">
-            <label for="reviewName">Nama</label><br>
+            <label class="label" for="reviewName">Nama</label><br>
               <input type="text" id="reviewName" placeholder="Your Name" required><br><br>
-            <label for="reviewText">Review</label><br>
+            <label class="label" for="reviewText">Review</label><br>
               <textarea id="reviewText" placeholder="Your Review" required></textarea><br><br>
-              <button type="submit">Submit Review</button><br>
+              <button class="button" type="submit">Submit</button><br>
             </form>
           </div>
         `;

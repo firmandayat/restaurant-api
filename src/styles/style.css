@@ -15,6 +15,35 @@ button {
   padding: 0;
 }
 
+input, textarea{
+  color: #4f6f52;
+  font-weight: bold;
+  outline-color: #4f6f52;
+  width: 100%;
+  border-radius: 7px;
+}
+
+.label{
+  color: #4f6f52;
+}
+
+.button{
+  color: #4f6f52;
+  border-radius: 7px;
+  width: 50%;
+  padding: 4px;
+  border-color: transparent;
+}
+
+.button:hover{
+  color: #ffffff;
+  border-radius: 7px;
+  width: 50%;
+  padding: 4px;
+  border-color: transparent;
+  background-color: #4f6f52;
+}
+
 .skip-link {
   padding: 10px;
   z-index: 3;
@@ -148,6 +177,18 @@ h2 {
   box-shadow: 0 4px 8px 0 #d2e3c8;
   transition: 0.3s;
   background-color: white;
+}
+
+.card-review {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 #d2e3c8;
+  transition: 0.3s;
+  background-color: white;
+  width: 50%;
+  padding: 1rem;
 }
 
 .container-card {
