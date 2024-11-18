@@ -42,7 +42,6 @@ const Detail = {
       },
     });
     this._initReviewForm(restos.id);
-    this._updateReviews(restos.id);
   },
 
   _initReviewForm(restaurantId) {
