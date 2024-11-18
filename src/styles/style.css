@@ -181,7 +181,11 @@ flex-wrap: wrap;
 }
 
 .wrapper-gallery img{
-width: 30%;}
+width: 350px;
+display: flex;
+flex-wrap: wrap;
+border-radius: 10px;
+}
 
 .card {
   margin: 10px 0px;
