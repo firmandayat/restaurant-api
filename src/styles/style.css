@@ -29,21 +29,22 @@ input, textarea{
 }
 
 .button{
-  color: #4f6f52;
+  color: white;
   border-radius: 7px;
   width: 50%;
   height: 44px;
   padding: 4px;
   border-color: transparent;
+  background-color: #4f6f52;
 }
 
 .button:hover{
-  color: #ffffff;
+  color: #4f6f52;
   border-radius: 7px;
   width: 50%;
   padding: 4px;
   border-color: transparent;
-  background-color: #4f6f52;
+  background-color: whitesmoke;
 }
 
 .skip-link {
