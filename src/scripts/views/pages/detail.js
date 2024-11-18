@@ -8,7 +8,7 @@ const Detail = {
   async render() {
     return `
           <h2 style="margin-top:100px">Detail Page</h2>
-          <p class="container text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi tempore atque reprehenderit, ratione, illo neque est perspiciatis itaque temporibus ipsam dignissimos adipisci. Eius alias eligendi laborum facilis ipsam repellat, ipsa quasi voluptatum, esse iure ut recusandae obcaecati nemo quibusdam quod libero</p>
+          <p class="container text">Setiap detail dirancang untuk memberikan pengalaman kuliner yang sempurna. Dari pemilihan bahan baku yang segar dan berkualitas, hingga penyajian hidangan dengan tampilan yang menggugah selera.</p>
           <div id="restaurant" class="wrapper-detail"></div>
           <div id="likeButtonContainer"></div>
           <h2 style="margin-top:50px">Add Your Review</h2>

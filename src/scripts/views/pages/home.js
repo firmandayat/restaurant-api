@@ -11,48 +11,27 @@ const Home = {
         <div class="container">
             <section class="description">
                 <h2 tabindex="0">
-                    Description
+                    The Tasty Touch
                 </h2>
                 <div id="mainContent" class="content">
                     <article>
-                        <p tabindex="0" class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi
-                            tempore atque reprehenderit,
-                            ratione, illo
-                            neque est perspiciatis itaque temporibus ipsam dignissimos adipisci. Eius alias eligendi
-                            laborum facilis
-                            ipsam
-                            repellat, ipsa quasi voluptatum, esse iure ut recusandae obcaecati nemo quibusdam quod
-                            libero? Quam vitae
-                            unde, nostrum id quis odio nobis nisi consequuntur debitis? In architecto molestiae ipsa
-                            cumque laboriosam
-                            totam, quod quibusdam laudantium corporis dolore quia obcaecati corrupti magni? Laudantium
-                            quaerat iste
-                            dignissimos in repellendus est optio sed labore. Ratione, praesentium. Quam vitae
-                            unde, nostrum id quis odio nobis nisi consequuntur debitis? In architecto molestiae ipsa
-                            cumque laboriosam
-                            totam, quod quibusdam laudantium corporis dolore quia obcaecati corrupti magni? Laudantium
-                            quaerat iste
-                            dignissimos in repellendus est optio sed labore. Ratione, praesentium.</p>
+                        <p tabindex="0" class="text">Berawal dari sebuah warung kecil di sudut kota, kami berkembang menjadi restoran ternama yang dikenal karena kualitas rasa dan pelayanan terbaik. Rasakan perpaduan sempurna antara cita rasa lokal dan internasional yang diolah dengan bahan segar dan penuh cinta, disajikan dalam suasana hangat yang mengundang, menjadikan setiap kunjungan Anda sebuah perjalanan kuliner yang tak terlupakan.</p>
                     </article>
                 </div>
             </section>
-          <h2 style="margin-top:50px">Restaurants</h2>
+          <h2 style="margin-top:50px">Restaurants List</h2>
           <div id="restaurant" class="wrapper-resto"></div>
           <section id="Contact Us" class="contact-us">
             <h2 tabindex="0">Contact Us</h2>
-            <p tabindex="0" class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi sapiente
-                quod amet cumque,
-                voluptatibus
-                earum tenetur unde eveniet quas, itaque iure culpa ex quidem commodi aperiam corrupti dolore alias
-                ducimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi sapiente
-                quod amet cumque,
-                voluptatibus
-                earum tenetur unde eveniet quas, itaque iure culpa ex quidem commodi aperiam corrupti dolore alias
-                ducimus? 
+            <p tabindex="0" class="text">Jika Anda memiliki pertanyaan atau ingin melakukan reservasi, jangan ragu untuk menghubungi kami. Tim kami siap membantu Anda dengan segala kebutuhan, mulai dari pemesanan meja, informasi menu, hingga acara spesial. Hubungi kami melalui email atau kunjungi kami langsung dan nikmati pengalaman kuliner terbaik bersama kami.
             </p>
             <div class="sosmed">
                 <a href="https://mailto:firman.txt@gmail.com" target="_blank"><img src="./images/logos/gm.png"
                         width="45px" alt="Gmail Logo"></a>
+                <a href="https://www.instagram.com/firmandyt/" target="_blank"><img src="./images/logos/ig.png"
+                width="45px" alt="Instagram Logo"></a>
+                <a href="https://www.linkedin.com/in/firmandyt/" target="_blank"><img
+                        src="./images/logos/linkedin.png" width="45px" alt="Linkedin Logo"></a>
             </div>
         </section>
         </div>          

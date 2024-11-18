@@ -173,6 +173,16 @@ h2 {
   gap: 30px;
 }
 
+.wrapper-gallery{
+display: flex;
+gap: 10px;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+.wrapper-gallery img{
+width: 30%;}
+
 .card {
   margin: 10px 0px;
   border-radius: 20px;
