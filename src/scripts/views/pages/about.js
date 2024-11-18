@@ -2,7 +2,7 @@ const About = {
   async render() {
     return `
           <div style="min-height:100vh">
-          <h2 style="margin-top:150px">About</h2>
+          <h2 class="space" style="margin-top:100px">About</h2>
           <p class="container text">Sejak pertama kali dibuka pada tahun 90, The Tasty Touch telah menjadi bagian dari perjalanan kuliner yang penuh dengan dedikasi dan inovasi. Berawal dari sebuah warung kecil yang didirikan oleh Firman Hidayatullah, restoran kami tumbuh dengan semangat untuk menyajikan hidangan autentik yang menggugah selera. Dengan resep yang telah diwariskan dari generasi ke generasi, kami menggabungkan cita rasa tradisional dengan sentuhan modern untuk menciptakan pengalaman makan yang tak terlupakan. Selama bertahun-tahun, The Tasty Touch telah menjadi tempat berkumpulnya keluarga, teman, dan kolega, dengan suasana yang ramah dan pelayanan yang hangat.</p><br>
           <h2 style="margin-top:20px">Gallery</h2>
           <div class="wrapper-gallery container">

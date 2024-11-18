@@ -45,6 +45,10 @@
     grid-template-columns: repeat(1, 1fr);
   }
 
+  .wrapper-gallery img {
+    width: 250px;
+  }
+
   .skip-link {
     top: -80px;
     margin-top: 10px;

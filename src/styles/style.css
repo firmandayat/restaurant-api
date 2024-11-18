@@ -181,7 +181,7 @@ flex-wrap: wrap;
 }
 
 .wrapper-gallery img{
-width: 350px;
+width: 300px;
 display: flex;
 flex-wrap: wrap;
 border-radius: 10px;
