@@ -7,7 +7,7 @@ const createRestoItemTemplate = (resto) => `
                 <h4><b>${resto.name}</b></h4>
                 <p><strong>Kota:</strong> ${resto.city}</p>
                 <p><strong>Rating:</strong> ${resto.rating}</p>
-                <a href="/#/detail/${resto.id}"><button>Detail</button></a>
+                <a href="/#/detail/${resto.id}"><button><span class="fa-solid fa-circle-info"></span> Detail</button></a>
             </div>
         </div>
 `;
