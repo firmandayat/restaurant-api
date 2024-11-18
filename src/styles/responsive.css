@@ -3,9 +3,9 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .wrapper-favorite {
-    gap: 30px;
-    margin: 30px;
+  .wrapper-resto{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .skip-link {
@@ -40,11 +40,9 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .wrapper-favorite {
+  .wrapper-resto {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-auto-columns: 100px;
-    gap: 30px;
   }
 
   .skip-link {

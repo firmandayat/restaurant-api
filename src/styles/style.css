@@ -198,12 +198,14 @@ h2 {
   grid-auto-columns: 100px;
   gap: 30px;
 }
+
 .wrapper-favorite {
   display: flex;
   gap: 30px;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  margin: 20px;
 }
 
 .flex{
