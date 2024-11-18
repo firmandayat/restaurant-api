@@ -42,6 +42,7 @@ const Detail = {
       },
     });
     this._initReviewForm(restos.id);
+    this._updateReviews(restos.id);
   },
 
   _initReviewForm(restaurantId) {
@@ -105,10 +106,10 @@ const Detail = {
 						${resto.menus.drinks.map((drink) => `<li><p>${drink.name}</p></li>`).join('')}
 					</ul>
 					<p><strong>Ulasan Pelanggan:</strong></p>
-					${resto.customerReviews.map((resto) => `
+					${resto.customerReviews.map((review) => `
 						<div>
-							<p><strong>${resto.name}</strong></p>
-							<p>${resto.review}</p>
+							<p><strong>${review.name}</strong></p>
+							<p>${review.review}</p>
 						</div>
 					`).join('')}
             </div>
