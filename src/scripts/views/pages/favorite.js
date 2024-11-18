@@ -6,7 +6,7 @@ const Favorite = {
     return `
           <div style="min-height:100vh">
           <h2 style="margin-top:120px">Favorite Page</h2>
-          <p class="container text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi tempore atque reprehenderit, ratione, illo neque est perspiciatis itaque temporibus ipsam dignissimos adipisci. Eius alias eligendi laborum facilis ipsam repellat, ipsa quasi voluptatum, esse iure ut recusandae obcaecati nemo quibusdam quod libero</p>
+          <p id="mainContent" class="container text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi tempore atque reprehenderit, ratione, illo neque est perspiciatis itaque temporibus ipsam dignissimos adipisci. Eius alias eligendi laborum facilis ipsam repellat, ipsa quasi voluptatum, esse iure ut recusandae obcaecati nemo quibusdam quod libero</p>
           <div id="restaurant" class="wrapper-favorite"></div>
           </div>
         `;
