@@ -8,6 +8,7 @@ const LikeButtonPresenter = {
   async init({ likeButtonContainer, restos }) {
     this._likeButtonContainer = likeButtonContainer;
     this._restos = restos;
+    this._favoriteResto = FavoriteResto;
 
     await this._renderButton();
   },
@@ -23,7 +24,7 @@ const LikeButtonPresenter = {
   },
 
   async _isRestoExist(id) {
-    const restos = await FavoriteResto.getResto(id);
+    const restos = await this._favoriteResto.getResto(id);
     return !!restos;
   },
 
@@ -31,7 +32,7 @@ const LikeButtonPresenter = {
     this._likeButtonContainer.innerHTML = createLikeRestoButtonTemplate();
     const likeButton = document.querySelector('#likeButton');
     likeButton.addEventListener('click', async () => {
-      await FavoriteResto.putResto(this._restos);
+      await this._favoriteResto.putResto(this._restos);
       this._renderButton();
     });
   },
@@ -40,7 +41,7 @@ const LikeButtonPresenter = {
     this._likeButtonContainer.innerHTML = createUnlikeRestoButtonTemplate();
     const likeButton = document.querySelector('#likeButton');
     likeButton.addEventListener('click', async () => {
-      await FavoriteResto.deleteResto(this._restos.id);
+      await this._favoriteResto.deleteResto(this._restos.id);
       this._renderButton();
     });
   },
