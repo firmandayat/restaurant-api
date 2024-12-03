@@ -17,7 +17,7 @@ const Favorite = {
 
     if (restos.length === 0) {
       restosContainer.innerHTML = `
-        <h2 style="text-align: center; margin-top: 25vh;">Tidak ada restoran favorit</h2>
+        <h2 class="empty-message" style="text-align: center; margin-top: 25vh;">Tidak ada resto favorite untuk ditampilkan</h2>
       `;
     } else {
       restos.forEach((resto) => {
