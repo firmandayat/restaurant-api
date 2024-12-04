@@ -4,10 +4,10 @@ const createRestoItemTemplate = (resto) => `
         <div class="card">
             <img src="${resto.pictureId ? CONFIG.BASE_IMAGE_URL + resto.pictureId : `https://restaurant-api.dicoding.dev/images/small/${resto.pictureId}`}" alt="${resto.name}">
             <div class="container">
-                <h4><b>${resto.name}</b></h4>
+                <h4 class="resto__title"><b>${resto.name}</b></h4>
                 <p><strong>Kota:</strong> ${resto.city}</p>
                 <p><strong>Rating:</strong> ${resto.rating}</p>
-                <a href="/#/detail/${resto.id}"><button><i class="fa-solid fa-circle-info"></i> Detail</button></a>
+                <a href="/#/detail/${resto.id}"><button id="button"><i class="fa-solid fa-circle-info"></i> Detail</button></a>
             </div>
         </div>
 `;
