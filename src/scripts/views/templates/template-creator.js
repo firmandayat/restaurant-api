@@ -2,7 +2,7 @@ import CONFIG from '../../globals/config';
 
 const createRestoItemTemplate = (resto) => `
         <div class="card">
-            <img class="lazyload" src="${resto.pictureId ? CONFIG.BASE_IMAGE_URL + resto.pictureId : `https://restaurant-api.dicoding.dev/images/small/${resto.pictureId}`}" alt="${resto.name}">
+            <img class="lazyload" data-src="${resto.pictureId ? CONFIG.BASE_IMAGE_URL + resto.pictureId : `https://restaurant-api.dicoding.dev/images/small/${resto.pictureId}`}" alt="${resto.name}">
             <div class="container">
                 <h4 class="resto__title"><b>${resto.name}</b></h4>
                 <p><strong>Kota:</strong> ${resto.city}</p>
@@ -14,7 +14,7 @@ const createRestoItemTemplate = (resto) => `
 
 const createRestoDetailTemplate = (resto) => `
         <div class="card">
-            <img class="lazyload" src="${resto.pictureId ? CONFIG.BASE_IMAGE_URL + resto.pictureId : `https://restaurant-api.dicoding.dev/images/small/${resto.pictureId}`}" alt="${resto.name}">
+            <img class="lazyload" data-src="${resto.pictureId ? CONFIG.BASE_IMAGE_URL + resto.pictureId : `https://restaurant-api.dicoding.dev/images/small/${resto.pictureId}`}" alt="${resto.name}">
             <div class="container">
                 <h4><b>${resto.name}</b></h4>
                 <p>${resto.description}</p>
