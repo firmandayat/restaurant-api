@@ -23,7 +23,7 @@ exports.config = {
   name: 'restaurant-api',
   plugins: {
     screenshotOnFail: {
-      enabled: true,
+      enabled: false,
     },
   },
 };
