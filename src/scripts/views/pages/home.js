@@ -6,7 +6,10 @@ const Home = {
   async render() {
     return `
     <section id="Home">
-            <img class="bg-banner" src="./images/heros/hero-image_4.jpg" alt="Hero Image" />
+        <picture>
+          <source media="(max-width: 600px)" srcset="./images/heros/hero-image_4.jpg">
+          <img class="bg-banner" src="./images/heros/hero-image_4.jpg" alt="Hero Image">
+        </picture>
         </section>
         <div class="container">
             <section class="description">
