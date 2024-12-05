@@ -7,8 +7,8 @@ const Home = {
     return `
     <section id="Home">
         <picture>
-          <source media="(max-width: 600px)" srcset="./images/heros/hero-image-small.jpg">
-          <img class="bg-banner lazyload" data-src="./images/heros/hero-image-large.jpg" alt="Hero Image">
+          <source type="image/webp" media="(max-width: 600px)" srcset="./images/heros/hero-image-small.webp">
+          <img type="image/webp" class="bg-banner" data-src="./images/heros/hero-image-large.webp" alt="Hero Image">
         </picture>
         </section>
         <div class="container">
