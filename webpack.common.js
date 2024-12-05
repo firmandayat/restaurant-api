@@ -6,6 +6,7 @@ const ImageminWebpackPlugin = require('imagemin-webpack-plugin').default;
 const ImageminMozjpeg = require('imagemin-mozjpeg');
 const ImageminWebpWebpackPlugin = require('imagemin-webp-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -33,6 +34,8 @@ module.exports = {
     ],
   },
   optimization: {
+    minimize: true,
+    minimizer: [`...`],
     splitChunks: {
       chunks: 'all',
       minSize: 20000,
@@ -92,5 +95,6 @@ module.exports = {
       overrideExtension: true,
     }),
     new BundleAnalyzerPlugin(),
+    new CssMinimizerPlugin(),
   ],
 };
