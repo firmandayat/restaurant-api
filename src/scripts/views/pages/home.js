@@ -8,7 +8,7 @@ const Home = {
     <section id="Home">
         <picture>
           <source type="image/webp" media="(max-width: 600px)" srcset="./images/heros/hero-image-small.webp">
-          <img type="image/webp" class="bg-banner" data-src="./images/heros/hero-image-large.webp" alt="Hero Image">
+          <img type="image/webp" class="bg-banner" src="./images/heros/hero-image-large.webp" alt="Hero Image">
         </picture>
         </section>
         <div class="container">
