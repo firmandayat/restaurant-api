@@ -11,6 +11,7 @@ html {
 body,
 button {
   font-family: 'Protest Riot', sans-serif;
+  font-display: swap;
   margin: 0;
   padding: 0;
 }
@@ -60,6 +61,7 @@ input, textarea{
   color: #d2e3c8;
   margin-top: 15px;
   font-family: 'Protest Riot';
+  font-display: swap;
 }
 
 .skip-link:focus {

@@ -29,12 +29,15 @@ const Home = {
             <p tabindex="0" class="text">Jika Anda memiliki pertanyaan atau ingin melakukan reservasi, jangan ragu untuk menghubungi kami. Tim kami siap membantu Anda dengan segala kebutuhan, mulai dari pemesanan meja, informasi menu, hingga acara spesial. Hubungi kami melalui email atau kunjungi kami langsung dan nikmati pengalaman kuliner terbaik bersama kami.
             </p>
             <div class="sosmed">
-                <a href="https://mailto:firman.txt@gmail.com" target="_blank"><img class="lazyload" data-src="./logos/gm.png"
-                        width="45px" alt="Gmail Logo"></a>
-                <a href="https://www.instagram.com/firmandyt/" target="_blank"><img class="lazyload" data-src="./logos/ig.png"
-                width="45px" alt="Instagram Logo"></a>
-                <a href="https://www.linkedin.com/in/firmandyt/" target="_blank"><img class="lazyload"
-                        data-src="./logos/linkedin.png" width="45px" alt="Linkedin Logo"></a>
+              <a href="mailto:firman.txt@gmail.com" target="_blank" aria-label="Email Firman">
+                  <img class="lazyload" data-src="./logos/gm.png" width="45px" height="45px" alt="Gmail Logo">
+              </a>
+              <a href="https://www.instagram.com/firmandyt/" target="_blank" aria-label="Instagram Firman">
+                  <img class="lazyload" data-src="./logos/ig.png" width="45px" height="45px" alt="Instagram Logo">
+              </a>
+              <a href="https://www.linkedin.com/in/firmandyt/" target="_blank" aria-label="LinkedIn Firman">
+                  <img class="lazyload" data-src="./logos/linkedin.png" width="45px" height="45px" alt="LinkedIn Logo">
+              </a>
             </div>
         </section>
         </div>          
