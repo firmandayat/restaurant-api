@@ -21,7 +21,7 @@ Scenario('review resto', ({ I }) => {
 
   // isi nama dan ulasan
   I.fillField('#reviewName', 'Firman Hidayatullah');
-  I.fillField('#reviewText', 'Restoran ini tempatnya nyaman, palayanannya ramah dan juga hidangannya lezat');
+  I.fillField('#reviewText', 'Restoran ini tempatnya nyaman, pelayanannya ramah dan juga hidangannya lezat');
 
   // klik tombol kirim ulasan
   I.seeElement('#submit-review');
@@ -30,5 +30,5 @@ Scenario('review resto', ({ I }) => {
   // tunggu oading selesai dan ulasan muncul di daftar ulasan
   I.waitForElement('.container', 3); 
   I.see('Firman Hidayatullah', '.container');
-  I.see('Restoran ini tempatnya nyaman, palayanannya ramah dan juga hidangannya lezat', '.container');
+  I.see('Restoran ini tempatnya nyaman, pelayanannya ramah dan juga hidangannya lezat', '.container');
 });
