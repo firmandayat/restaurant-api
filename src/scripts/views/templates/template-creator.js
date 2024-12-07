@@ -2,40 +2,76 @@ import CONFIG from '../../globals/config';
 
 const createRestoItemTemplate = (resto) => `
         <div class="card">
-            <img class="lazyload" data-src="${resto.pictureId ? CONFIG.BASE_IMAGE_URL + resto.pictureId : `https://restaurant-api.dicoding.dev/images/small/${resto.pictureId}`}" alt="${resto.name}">
+            <img class="lazyload" data-src="${
+              resto.pictureId
+                ? CONFIG.BASE_IMAGE_URL + resto.pictureId
+                : `https://restaurant-api.dicoding.dev/images/small/${resto.pictureId}`
+            }" alt="${resto.name}">
             <div class="container">
                 <h4 class="resto__title"><b>${resto.name}</b></h4>
-                <p><strong>Kota:</strong> ${resto.city}</p>
-                <p><strong>Rating:</strong> ${resto.rating}</p>
-                <a href="/#/detail/${resto.id}"><button id="button"><i class="fa-solid fa-circle-info"></i> Detail</button></a>
+                <p class="text"><strong class="title-detail"><i class="fa-solid fa-city"></i> Kota:</strong> ${
+                  resto.city
+                }</p>
+                <p class="text"><strong class="title-detail"><i class="fa-solid fa-star"></i> Rating:</strong> ${
+                  resto.rating
+                }</p>
+                <a href="/#/detail/${
+                  resto.id
+                }"><button id="button"><i class="fa-solid fa-circle-info"></i> Detail</button></a>
             </div>
         </div>
 `;
 
 const createRestoDetailTemplate = (resto) => `
-        <div class="card">
-            <img class="lazyload" data-src="${resto.pictureId ? CONFIG.BASE_IMAGE_URL + resto.pictureId : `https://restaurant-api.dicoding.dev/images/small/${resto.pictureId}`}" alt="${resto.name}">
+        <div class="img-container">
+            <img class="img-detail lazyload" data-src="${
+              resto.pictureId
+                ? CONFIG.BASE_IMAGE_URL + resto.pictureId
+                : `https://restaurant-api.dicoding.dev/images/small/${resto.pictureId}`
+            }" alt="${resto.name}"><br>
+            <div class="rating">⭐ ${resto.rating}</div>
             <div class="container">
-                <h4><b>${resto.name}</b></h4>
-                <p>${resto.description}</p>
-                <p><strong>Kota:</strong> ${resto.city}</p>
-                <p><strong>Alamat:</strong> ${resto.address}</p>
-                <p><strong>Rating:</strong> ${resto.rating}</p>
-                <p><strong>Menu Makanan:</strong></p>
-					<ul>
-						${resto.menus.foods.map((food) => `<li><p>${food.name}</p></li>`).join('')}
-					</ul>
-					<p><strong>Menu Minuman:</strong></p>
-					<ul>
-						${resto.menus.drinks.map((drink) => `<li><p>${drink.name}</p></li>`).join('')}
-					</ul>
-					<p><strong>Ulasan Pelanggan:</strong></p>
-					${resto.customerReviews.map((review) => `
+                <h4 class="title"><b>${resto.name}</b></h4>
+                <p class="text">${resto.description}</p>
+                <p class="text"><strong class="title-detail"><i class="fa-solid fa-city"></i> Kota:</strong> ${
+                  resto.city
+                }</p>
+                <p class="text"><strong class="title-detail"><i class="fa-solid fa-street-view"></i> Alamat:</strong> ${
+                  resto.address
+                }</p>
+                
+          <br><br>
+          <div>
+            <h2><strong><i class="fa-solid fa-plate-wheat"></i> Menu Makanan</strong></h2>
+            <div class="food-container">
+              ${resto.menus.foods
+                .map((food) => `<div class="food">${food.name}</div>`)
+                .join('')}
+            </div>
+          </div>
+
+          <br><br><br>
+					<h2><strong><i class="fa-solid fa-wine-glass"></i> Menu Minuman</strong></h2>
+					<div class="food-container">
+						${resto.menus.drinks
+              .map((drink) => `<div class="food">${drink.name}</div>`)
+              .join('')}
+					</div>
+
+          <br><br><br>
+					<h2><strong><i class="fa-solid fa-pen"></i> Ulasan Pelanggan</strong></h2>
+					<div class="card-reviewed">
+          ${resto.customerReviews
+            .map(
+              (review) => `
 						<div>
-							<p><strong>${review.name}</strong></p>
-							<p>${review.review}</p>
+							<p class="title-detail"><strong>${review.name}</strong></p>
+							<p class="text">${review.review}</p><br>
 						</div>
-					`).join('')}
+					`
+            )
+            .join('')}
+            </div>
             </div>
         </div>
 `;
