@@ -20,7 +20,7 @@ input, textarea{
   color: #4f6f52;
   font-weight: bold;
   outline-color: #4f6f52;
-  width: 60%;
+  width: 100%;
   border-radius: 7px;
   height: 44px;
 }
@@ -228,7 +228,7 @@ border-radius: 10px;
   background-color: white;
   height: 300px;
   padding: 20px;
-  width: 70%;
+  width: 50%;
 }
 
 #review-form{
