@@ -274,20 +274,20 @@ border-radius: 10px;
 }
 
 .wrapper-detail{
-  display: flex;
+  /* display: flex; */
   width: 100%;
   margin: auto;
 }
 
 .img-detail{
   width: 100%;
-  height: 30%;
+  height: 100%;
   object-fit: cover;
 }
 
 .rating{
   position: absolute;
-  top: 100px;
+  top: 80px;
   left: 20px;
   background-color: #4f6f52;
   color: #fff;

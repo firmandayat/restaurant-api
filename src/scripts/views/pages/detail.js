@@ -8,7 +8,7 @@ const Detail = {
   async render() {
     return `
           <div id="restaurant" class="wrapper-detail"></div>
-          <div id="likeButtonContainer"></div>
+          <div id="likeButtonContainer"></div><br><br><br>
           <h2><i class="fa-solid fa-pen"></i> Add Your Review</h2>
           <div class="card-review"> 
             <form id="reviewForm">
