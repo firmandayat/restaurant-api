@@ -18,7 +18,7 @@ const Detail = {
               <input type="text" id="reviewName" placeholder="Your Name" required><br><br>
             <label class="label" for="reviewText">Review</label><br>
               <textarea id="reviewText" placeholder="Your Review" required></textarea><br><br>
-              <button id="submit-review" class="button" type="submit">Submit</button><br>
+              <button id="submit-review" class="button" type="submit">✔ Submit</button><br>
             </form>
           </div>
         `;
