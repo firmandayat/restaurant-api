@@ -9,7 +9,7 @@ html {
 }
 
 body,
-button {
+button, input, textarea {
   font-family: 'Protest Riot', sans-serif;
   font-display: swap;
   margin: 0;

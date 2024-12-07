@@ -20,8 +20,8 @@ Scenario('review resto', ({ I }) => {
   I.seeElement('#reviewForm');
 
   // isi nama dan ulasan
-  I.fillField('#reviewName', 'Brendan Eich');
-  I.fillField('#reviewText', 'Restoran ini tempatnya nyaman');
+  I.fillField('#reviewName', 'Firman Hidayatullah');
+  I.fillField('#reviewText', 'Restoran ini tempatnya nyaman, palayanannya ramah dan juga hidangannya lezat');
 
   // klik tombol kirim ulasan
   I.seeElement('#submit-review');
@@ -29,6 +29,6 @@ Scenario('review resto', ({ I }) => {
 
   // tunggu oading selesai dan ulasan muncul di daftar ulasan
   I.waitForElement('.container', 3); 
-  I.see('Brendan Eich', '.container');
-  I.see('Restoran ini tempatnya nyaman', '.container');
+  I.see('Firman Hidayatullah', '.container');
+  I.see('Restoran ini tempatnya nyaman, palayanannya ramah dan juga hidangannya lezat', '.container');
 });
