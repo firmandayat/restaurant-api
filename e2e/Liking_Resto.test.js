@@ -7,10 +7,10 @@ Before(({ I }) => {
 });
 
 // Scenario('showing empty favorite resto', ({ I }) => {
-  //   I.see('Tidak ada resto favorite untuk ditampilkan', '.empty-message');
-  // });
-  
-  // Menambahkan skenario favorite restaurant
+//   I.see('Tidak ada resto favorite untuk ditampilkan', '.empty-message');
+// });
+
+// Menambahkan skenario favorite restaurant
 Scenario('liking one resto', async ({ I }) => {
   I.see('Tidak ada resto favorite untuk ditampilkan', '.empty-message');
   I.amOnPage('/');

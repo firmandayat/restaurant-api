@@ -34,7 +34,7 @@ module.exports = {
   },
   optimization: {
     minimize: true,
-    minimizer: [`...`, new CssMinimizerPlugin()],
+    minimizer: ['...', new CssMinimizerPlugin()],
     splitChunks: {
       chunks: 'all',
       minSize: 20000,

@@ -11,20 +11,23 @@ const dbPromise = openDB(DATABASE_NAME, DATABASE_VERSION, {
 
 const FavoriteResto = {
   async getResto(id) {
-     if (!id) {
-       return;
-     }
+    if (!id) {
+      return;
+    }
     return (await dbPromise).get(OBJECT_STORE_NAME, id);
   },
+
   async getAllResto() {
     return (await dbPromise).getAll(OBJECT_STORE_NAME);
   },
+
   async putResto(restos) {
-    if (!restos.hasOwnProperty('id')) {
+    if (!restos || !Object.prototype.hasOwnProperty.call(restos, 'id')) {
       return;
     }
     return (await dbPromise).put(OBJECT_STORE_NAME, restos);
   },
+
   async deleteResto(id) {
     return (await dbPromise).delete(OBJECT_STORE_NAME, id);
   },

@@ -28,7 +28,7 @@ Scenario('review resto', ({ I }) => {
   I.click('#submit-review');
 
   // tunggu oading selesai dan ulasan muncul di daftar ulasan
-  I.waitForElement('.container', 3); 
+  I.waitForElement('.container', 3);
   I.see('Firman Hidayatullah', '.container');
   I.see('Restoran ini tempatnya nyaman, pelayanannya ramah dan juga hidangannya lezat', '.container');
 });
