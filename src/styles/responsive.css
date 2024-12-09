@@ -29,6 +29,7 @@
 
   .dropdown-menu.open {
     display: block;
+    height: 22rem;
   }
 
   .list li {
@@ -69,7 +70,6 @@
   }
 
   .dropdown-menu.open {
-    height: 18rem;
     width: 70%;
   }
 
