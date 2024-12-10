@@ -59,7 +59,7 @@ const createRestoDetailTemplate = (resto) => `
 					</div>
 
           <br><br><br>
-					<h2><strong><i class="fa-solid fa-pen"></i> Ulasan Pelanggan</strong></h2>
+					<h2><strong><i class="fa-solid fa-star"></i> Ulasan Pelanggan</strong></h2>
 					<div class="card-reviewed">
           ${resto.customerReviews
     .map(
