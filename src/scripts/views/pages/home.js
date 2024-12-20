@@ -14,11 +14,11 @@ const Home = {
         <div class="container">
             <section class="description">
                 <h2 tabindex="0">
-                    The Tasty Touch
+                    The Tasty
                 </h2>
                 <div id="mainContent" class="content">
                     <article>
-                        <p tabindex="0" class="text">Berawal dari sebuah warung kecil di sudut kota, kami berkembang menjadi restoran ternama yang dikenal karena kualitas rasa dan pelayanan terbaik. Rasakan perpaduan sempurna antara cita rasa lokal dan internasional yang diolah dengan bahan segar dan penuh cinta, disajikan dalam suasana hangat yang mengundang, menjadikan setiap kunjungan Anda sebuah perjalanan kuliner yang tak terlupakan.</p>
+                        <p tabindex="0" class="text">Berawal dari sebuah warung kecil di sudut kota, kami berkembang menjadi restoran ternama yang dikenal karena kualitas rasa dan pelayanan terbaik. Rasakan perpaduan sempurna antara cita rasa lokal dan internasional yang diolah dengan bahan segar dan penuh cinta, disajikan dalam suasana hangat yang menjadikan setiap kunjungan Anda sebuah perjalanan kuliner yang tak terlupakan.</p>
                     </article>
                 </div>
             </section>
