@@ -143,3 +143,6 @@ Tugas akhir kelas ahli ini adalah membuat layanan katalog restoran online.
 <ul>
   <li>Responsibilitas tampilan,  aksesibilitas pada website dan sebagainya.</li>
 </ul>
+
+<h3>Link project:</h3>
+https://resto.firmandyt.my.id
