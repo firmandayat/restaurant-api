@@ -1,7 +1,7 @@
 @media screen and (max-width: 1024px) {
   .title {
-      top: 30%;
-    }
+    top: 30%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -9,7 +9,13 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .wrapper-resto{
+  .tagline {
+    top: 15%;
+    padding-left: 40px;
+    font-size: 50px;
+  }
+
+  .wrapper-resto {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
@@ -41,14 +47,19 @@
     height: 100%;
   }
 
-  .title{
-      top: 30%;
+  .title {
+    top: 30%;
   }
 }
 
 @media (max-width: 480px) {
   .wrapper-card {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tagline {
+    font-size: 25px;
+    padding-left: 20px;
   }
 
   .wrapper-resto {
