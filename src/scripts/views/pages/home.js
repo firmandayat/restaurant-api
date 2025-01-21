@@ -10,7 +10,7 @@ const Home = {
           <source type="image/webp" media="(max-width: 600px)" srcset="./images/heros/hero-image-small.webp">
           <img type="image/webp" class="bg-banner" src="./images/heros/hero-image-large.webp" alt="Hero Image">
         </picture>
-        <h1 class="tagline">Hidangan Istimewa <br>Dibuat dengan <i style="color:#d2e3c8">Cinta</i></h1>
+        <h1 class="tagline">Hidangan Istimewa <br>Dibuat dengan <span style="color:#d2e3c8">Cinta</span></h1>
         </section>
         <div class="container">
             <section class="description">
